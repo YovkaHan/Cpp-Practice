@@ -1,0 +1,2 @@
+{Sandor;Charley;-----;some_guy;450;3000
+{Jarvis;----;----;mainframe;0;500

@@ -1,7 +1,7 @@
-//  	Вычисление цепной дроби
+п»ї//  	Р’С‹С‡РёСЃР»РµРЅРёРµ С†РµРїРЅРѕР№ РґСЂРѕР±Рё
 #include <iostream>               // cin, cout
 
-float fun(int num)                // Рекурсия
+float fun(int num)                // Р РµРєСѓСЂСЃРёСЏ
 {
 	if (num > 1)
 	{
@@ -19,7 +19,7 @@ void main()
 	int   count = 0;
 	float result = 0.0;
 
-	std::cout << "How much? ";     // Какая "глубина" этой дроби?
+	std::cout << "How much? ";     // РљР°РєР°СЏ "РіР»СѓР±РёРЅР°" СЌС‚РѕР№ РґСЂРѕР±Рё?
 	std::cin >> count;
 
 	result = 1 + fun(count);

@@ -1,7 +1,7 @@
-//                   Проверяет баланс открывающих "{" и закрывающих "}" скобок в файле
+п»ї//                   Check the balance of { and } 
 #include <iostream>          // cin, cout
-#include <fstream>           // Файловый ввод/вывод
-#include <string>            // Работа со строками  ">>", "getline()"
+#include <fstream>           // File in/out
+#include <string>            // Work with str  ">>", "getline()"
 
 void main()
 {
@@ -13,7 +13,7 @@ void main()
 	std::cin  >> path;
 	std::ifstream fin(path);
 
-	while (std::getline(fin, data))        // Взятие строки с файлового потока вывода
+	while (std::getline(fin, data))        // Р’Р·СЏС‚РёРµ СЃС‚СЂРѕРєРё СЃ С„Р°Р№Р»РѕРІРѕРіРѕ РїРѕС‚РѕРєР° РІС‹РІРѕРґР°
 	{
 		for (int i = 0; i < data.length(); i++)
 		{
