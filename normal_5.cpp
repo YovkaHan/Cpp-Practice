@@ -27,7 +27,7 @@ int main() {
 
 	int count    = 0;             // кол-во структур
 	int num      = 0;
-	Persona *P_s = new Persona[count + 1];         // Начальное выделение памяти по 1 структуру
+	Persona *P_s = new Persona[count + 1];         // Начальное выделение памяти под 1 структуру
 
 	P_s[0] = create_persona();
 	Persona *buf;
