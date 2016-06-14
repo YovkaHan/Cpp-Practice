@@ -1,4 +1,4 @@
-// Динамическое выделение памяти для структур С++
+п»ї// Р”РёРЅР°РјРёС‡РµСЃРєРѕРµ РІС‹РґРµР»РµРЅРёРµ РїР°РјСЏС‚Рё РґР»СЏ СЃС‚СЂСѓРєС‚СѓСЂ РЎ++
 #include <iostream>
 #include <locale>
 #include <string>
@@ -14,9 +14,9 @@ Persona create_persona()
 {
 	Persona P;
 
-	std::cout << "Имя : ";
+	std::cout << "РРјСЏ : ";
 	std::cin >> P.name;
-	std::cout << "Возраст : ";
+	std::cout << "Р’РѕР·СЂР°СЃС‚ : ";
 	std::cin >> P.age;
 
 	return P;
@@ -25,19 +25,19 @@ Persona create_persona()
 int main() {
 	setlocale(LC_ALL, "rus");
 
-	int count    = 0;             // кол-во структур
+	int count    = 0;             // РєРѕР»-РІРѕ СЃС‚СЂСѓРєС‚СѓСЂ
 	int num      = 0;
-	Persona *P_s = new Persona[count + 1];         // Начальное выделение памяти по 1 структуру
+	Persona *P_s = new Persona[count + 1];         // РќР°С‡Р°Р»СЊРЅРѕРµ РІС‹РґРµР»РµРЅРёРµ РїР°РјСЏС‚Рё РїРѕ 1 СЃС‚СЂСѓРєС‚СѓСЂСѓ
 
 	P_s[0] = create_persona();
 	Persona *buf;
 
 	while (1)
 	{
-		std::cout << "Внести еще данные — 1, выход — 0: ";
+		std::cout << "Р’РЅРµСЃС‚Рё РµС‰Рµ РґР°РЅРЅС‹Рµ вЂ” 1, РІС‹С…РѕРґ вЂ” 0: ";
 		std::cin >> num;
 
-		if (num == 0)                                       // Выход из цикла
+		if (num == 0)                                       // Р’С‹С…РѕРґ РёР· С†РёРєР»Р°
 			break;
 
 		count++;                   
@@ -61,7 +61,7 @@ int main() {
 				P_s[index].name = buf[index].name;
 				P_s[index].age = buf[index].age;
 			}
-			std::cout << index << "-й" << " Элементы структуры объекта Р: " << P_s[index].name <<" : "<< P_s[index].age<< std::endl;
+			std::cout << index << "-Р№" << " Р­Р»РµРјРµРЅС‚С‹ СЃС‚СЂСѓРєС‚СѓСЂС‹ РѕР±СЉРµРєС‚Р° Р : " << P_s[index].name <<" : "<< P_s[index].age<< std::endl;
 		}
 
 		delete [] buf;
